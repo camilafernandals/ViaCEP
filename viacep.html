@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <title>ViaCEP Webservice</title>  <!-- título da página   -->   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Adicionando Javascript -->
+    <script src="main.js"> 
+    </script>
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body><!--Início do body-->
+    <!-- Inicio do formulario // como irá aprecer ao usuário --> 
+    <h1>ViaCEP Foragidas <br><i>Informe seu CEP sem hífen</i></h1><!--Título da página-->
+      <form method="get" action="."><!--Início da tabela-->
+        <label>Nome:<br>
+            <input name="nome" type="text" id="nome" value="" size="40" 
+                   onblur="pesquisacep(this.value);" /></label> <br /> <!--Inserir o nome-->
+        <label>E-mail:<br>
+            <input name="e-mail" type="text" id="e-mail" value="" size="40" 
+                    onblur="pesquisacep(this.value);" /></label><br /><!--Inseir o e-mail-->
+        <label>CEP:<br>
+        <input name="cep" type="text" id="cep" value="" size="40" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br /> <!--Inseir o CEP-->
+        <label>Rua:<br>
+        <input name="rua" type="text" id="rua" size="40" /></label><br /><!--Inseir a rua-->
+        <label>Bairro:<br>
+        <input name="bairro" type="text" id="bairro" size="40" /></label><br /><!--Inseir o bairro-->
+        <label>Cidade:<br>
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br /><!--Inseir a cidade-->
+        <label>Estado:<br>
+        <input name="uf" type="text" id="uf" size="40" /></label><br /><!--Inseir o Estado-->
+        <label>IBGE:<br>
+        <input name="ibge" type="text" id="ibge" size="40" /></label><br /><!--Inseir dados do IBGE-->
+        <br>
+      </form> <!--FIM da tabela-->
+      <footer>Aline, Ana Carla, Camila, Larissa e Suellayne. <br> 2024. Todos os direitos reservados.</footer>
+    </body><!--FIM do corpo-->
+
+</html>
